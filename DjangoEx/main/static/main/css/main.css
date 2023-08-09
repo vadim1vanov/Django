@@ -1,0 +1,105 @@
+body{
+    background: #2c2c2c;
+}
+
+aside{
+    float: left;
+    background: #181818;
+    width: 20%;
+    padding: 2.5%;
+    height: 100vh;
+    color: #fff;
+    border-right: 1px solid #fdbe00;
+    
+}
+aside:hover{
+    box-shadow:  0  0 10px 0 #fdbe00;
+}
+
+aside img{
+    width: 80px;
+    height: 80px;
+}
+
+aside ul{ 
+    margin-top: 30px; 
+    padding-left: 0;
+    margin: 25px auto;
+}
+aside a, aside li{
+    list-style: none;
+    font-size: 22px;
+    background-color: #5b5b5b;
+    text-align: center;
+    border-radius: 13px;
+    padding-bottom: 2%;
+    margin-top: 25px;
+}
+a{
+    text-decoration: none;
+   color: #fff;
+}
+
+aside a:hover, aside li:hover{
+    color: rgb(255, 255, 255);
+    transform: scale(1.02);
+    
+    transition: 100ms ease-in;
+    background-color: #77c674;
+    box-shadow: 0px 0px 1px 1px #cbf7c4;
+   
+}
+
+.logo{
+    font-size: 40px;
+    margin-left: 20px;
+    font-weight: bold;
+    position: relative;
+    top: +10px;
+    
+}
+
+h3{
+    margin-top: 3vh;
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-align: center;
+    color: #eac700;
+    font-weight: bold;
+}
+
+main .features{
+   color: #fff;
+   float: left; 
+   margin-top: 100px;
+   text-align: center;
+   width: 75%;
+}
+
+main .features h1{
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+main .features p{
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.alert-warning{
+    float: left;
+    width: 600px;
+    margin: 20px 34%;
+    text-align: left;
+    clear: both;
+}
+
+main .news h3{
+    color: #000000;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+main .news p{
+    color: #2b0b2e;
+    font-size: 18px;
+}
