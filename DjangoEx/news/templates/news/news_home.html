@@ -1,20 +1,22 @@
 {% extends 'main/layout.html'%} 
-
-{% block title%} 
-    Новости
-{% endblock %} 
-
+{% block title%} Новости {% endblock %} 
 {% block content%}
-    <div class="features">
-        <div class="news">
-        <h1>Заметки</h1>
-
+<div class="features">
+  <div class="container">
+    <div class="news">
+      <h1>Заметки</h1>
+      {% if news%}
         {%for el in news%}
-            <div class="alert alert-warning">
-                <h3>{{el.title}}</h3>
-                <p>{{el.anons}}</p>
-            </div>
-        {% endfor %}
+        <div class="alert alert-warning">
+          <h3>{{el.title}}</h3>
+          <p>{{el.anons}}</p>
+          <div class="news_date"><p>{{el.date}}</p></div>
         </div>
+        {% endfor %}
+      {% else %}
+        <div class="none"><p>На данный момент никаких записей нет.</p></div>
+      {% endif %}
     </div>
+  </div>
+</div>
 {% endblock %}

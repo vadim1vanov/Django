@@ -31,8 +31,7 @@ aside a, aside li{
     font-size: 22px;
     background-color: #5b5b5b;
     text-align: center;
-    border-radius: 13px;
-    padding-bottom: 2%;
+    border-radius: 4px;
     margin-top: 25px;
 }
 a{
@@ -45,51 +44,67 @@ aside a:hover, aside li:hover{
     transform: scale(1.02);
     
     transition: 100ms ease-in;
-    background-color: #77c674;
-    box-shadow: 0px 0px 1px 1px #cbf7c4;
-   
+    background-color: #c67474;
+    box-shadow: 0px 0px 60px 0px #ff0000;  
+}
+
+#btn-li:hover{
+    color: rgb(255, 255, 255);
+    transform: scale(1.03);
+    transition: 50ms ease-in;
+    box-shadow: none;
+    background-color:transparent;
 }
 
 .logo{
-    font-size: 40px;
+    font-size: 30px;
     margin-left: 20px;
     font-weight: bold;
     position: relative;
     top: +10px;
-    
+    color: #c27676;
+    cursor: pointer;   
 }
 
+
 h3{
-    margin-top: 3vh;
-    margin-bottom: 20px;
+    margin-top: 5vh;
+    margin-bottom: 30px;
     font-size: 30px;
     text-align: center;
-    color: #eac700;
+    color: #e2d492;
     font-weight: bold;
 }
 
 main .features{
    color: #fff;
-   float: left; 
-   margin-top: 100px;
+
    text-align: center;
-   width: 75%;
+   float:right;
+   width: 80%;
+}
+
+main .container{
 }
 
 main .features h1{
     font-size: 50px;
     padding-bottom: 20px;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
 }
 
+
 main .features p{
-    max-width: 400px;
+    max-width: 470px;
     margin: 20px auto;
 }
 
 .alert-warning{
-    float: left;
+    justify-content: center;
     width: 600px;
-    margin: 20px 34%;
+    margin: 20px 30%;
     text-align: left;
     clear: both;
 }
@@ -100,6 +115,33 @@ main .news h3{
     margin-top: 30px;
 }
 main .news p{
-    color: #2b0b2e;
+    color: #4a0850;
     font-size: 18px;
+}
+
+main .none p{
+    color:#ffd900;
+    font-size: 20px;
+}
+main .news_date p{
+    color:#0f023f;
+    font-size: 14px;
+    text-align: right;
+    font-weight: bold;
+}
+
+ .btn-primary{
+    font-size: 18px;
+    height: 100%;
+    width: 100%;
+}
+
+main .news a{
+    width: 50px;
+    height: 50px;
+margin-top: 0;
+}
+main .news h1{
+    width: 400px;
+    margin-top: 100px;
 }
