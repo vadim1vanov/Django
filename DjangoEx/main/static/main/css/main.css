@@ -33,6 +33,7 @@ aside a, aside li{
     text-align: center;
     border-radius: 4px;
     margin-top: 25px;
+    padding: 5px 0;
 }
 a{
     text-decoration: none;
@@ -48,20 +49,37 @@ aside a:hover, aside li:hover{
     box-shadow: 0px 0px 60px 0px #ff0000;  
 }
 
+aside a:active, aside li:active{
+    background-color: #e04b4b;
+    color: #e1e0e0;
+}
+
+#btn-li{
+    padding: 0;
+    margin-top: 50vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    width: 300px;
+    justify-content: center;
+}
+
 #btn-li:hover{
     color: rgb(255, 255, 255);
     transform: scale(1.03);
     transition: 50ms ease-in;
     box-shadow: none;
     background-color:transparent;
+    box-shadow: 0px 0px 80px 0px #007bff; 
 }
 
+
 .logo{
-    font-size: 30px;
+    font-size: 50px;
     margin-left: 20px;
     font-weight: bold;
     position: relative;
-    top: +10px;
+    top: +15px;
     color: #c27676;
     cursor: pointer;   
 }
@@ -91,7 +109,9 @@ main .features h1{
     font-size: 50px;
     padding-bottom: 20px;
     justify-content: center;
-    margin: 0 auto;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
 }
 
@@ -103,10 +123,11 @@ main .features p{
 
 .alert-warning{
     justify-content: center;
-    width: 600px;
-    margin: 20px 30%;
+    width: 550px;
+    margin: 25px 30%;
     text-align: left;
     clear: both;
+    background-color: #fdf8e6;
 }
 
 main .news h3{
@@ -115,7 +136,7 @@ main .news h3{
     margin-top: 30px;
 }
 main .news p{
-    color: #4a0850;
+    color: #342604;
     font-size: 18px;
 }
 
@@ -131,10 +152,22 @@ main .news_date p{
 }
 
  .btn-primary{
-    font-size: 18px;
+    font-size: 22px;
     height: 100%;
     width: 100%;
+    padding: 10px 0;
+    border-radius: 20px;
+    background-color: #ffbb00;
+    color: #000;
+    border: none;
 }
+
+.btn-primary:hover{
+    background-color: #489ef3;
+    color: #ffffff;
+    border: none;
+}
+
 
 main .news a{
     width: 50px;
@@ -143,5 +176,24 @@ margin-top: 0;
 }
 main .news h1{
     width: 400px;
-    margin-top: 100px;
+}
+
+form{
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    margin-top: 50px;
+}
+
+main .btn-success{
+    font-size: 18px;
+    padding: 7px 20px;
+    margin-top: 20px;
+}
+
+main .news a{
+    width: 160px;
+    font-size: 14px;
+    height: 35px;
+    text-align: center;
 }

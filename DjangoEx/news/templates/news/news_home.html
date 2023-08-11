@@ -11,6 +11,7 @@
           <h3>{{el.title}}</h3>
           <p>{{el.anons}}</p>
           <div class="news_date"><p>{{el.date}}</p></div>
+          <a href="{% url 'news-detail' el.id%}" class="btn btn-warning">Показать полностью</a>
         </div>
         {% endfor %}
       {% else %}
