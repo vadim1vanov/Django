@@ -12,3 +12,5 @@ def index(requests):
 def about(requests):
     return render(requests, "main/about.html")
 
+
+
