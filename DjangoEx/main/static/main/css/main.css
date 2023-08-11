@@ -35,6 +35,15 @@ aside a, aside li{
     margin-top: 25px;
     padding: 5px 0;
 }
+.btn-info{
+    color: #ffffff;
+    background-color: #508cfc;
+    border: 1px solid #508cfc;
+}
+.btn-info:hover{
+    background-color: #679af8;
+    border: 1px solid #679af8;
+}
 a{
     text-decoration: none;
    color: #fff;
@@ -172,7 +181,7 @@ main .news_date p{
 main .news a{
     width: 50px;
     height: 50px;
-margin-top: 0;
+    margin-top: 0;
 }
 main .news h1{
     width: 400px;
