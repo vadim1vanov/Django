@@ -1,5 +1,7 @@
 from django.shortcuts import render
+from django.views.generic import CreateView
 
+from django.contrib.auth.decorators import login_required
 
 data = {
     'title': 'Главная страница',
@@ -12,5 +14,9 @@ def index(requests):
 def about(requests):
     return render(requests, "main/about.html")
 
+def login(requests):
+    return render(requests, "main/login.html")
 
-
+@login_required
+def profile_view(requests):
+    return render(requests, "main/profile.html")
